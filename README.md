@@ -36,3 +36,78 @@ also say step-by-step solutionn of the problem is called algorithm
     with the size of the input (represented by n). In simpler terms, as the input size increases, the time it takes for the algorithms to run increses slowly.
 
 
+
+# Arrays
+- Introduction
+- Custom Array
+- Challenges
+  - Reverse String
+  - Palindromes
+  - Integer Reversal
+  - Sentence Capitalization
+  - FizzBuzz
+  - Max Profit
+  - Array Chunk
+  - Two Sum
+
+
+# Array DS
+  - Data structure array is an ordered collection of elements that can be 
+    accessed using a numarical index.
+
+* Reverse String
+  - Convert String to array  (split)
+  - Reverse the Array  (reverse)
+  - Convert array back to String.  (join)
+
+- Palindrome :: If the reverse string is equal to the original then the word is a palindrome
+
+* Integer Reverse
+  - convert number to string
+  - convert strign to array
+  - reverse the array
+  - convert array back to string
+  - convert string back to number 
+
+* Sentence Capitalization
+  - make the string to lowercase
+  - convert the string to array
+  - Capitalize each word
+    - iterate array and set First letter UpperCase and concate remaing word
+  - Convert array back to String
+
+* FizzBuzz
+  - Print Numbers from 1 to n
+  - If number is divisible by 3, print Fizz
+  - if number is divisible by 5, print Buzz
+  - If number is divisible by 3 & 5, print FizzBuzz
+  - else print the number
+
+
+* * Max Profit ::
+  Imagane you're buying and selling stocks throughout the year. Your job is to find the
+  biggest profit you could make by buying and selling high only once
+
+  Here what you're given:
+
+  A list of stocks prices for each day  [7, 1, 5, 3, 6, 4]
+
+  Here's what you need to find:
+
+  The difference between the cheapest price you could have bought the stock and the most
+  expencive price you could have sold it later on.
+
+
+* * Array Chunk ::
+  Write a function that takes an array and a chunk size as input The function should
+  return a new array where the original array is split into chunks of the specified
+  size.
+
+* * Two Sum ::
+    Imagine you have a list of numbers and a target numbers. your job is to find two 
+    numbers in that list that add up to the target numbers. You aslo need to tell 
+    which position (indexes) those two numbers are at in the list.
+
+    Example: 
+        If the list is [2, 7, 11, 15] and the target is 9, then the answer would
+        be [0, 1] because 2 (at index 0) plus 7 (at index 1) equals 9.
