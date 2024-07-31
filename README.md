@@ -111,3 +111,40 @@ also say step-by-step solutionn of the problem is called algorithm
     Example: 
         If the list is [2, 7, 11, 15] and the target is 9, then the answer would
         be [0, 1] because 2 (at index 0) plus 7 (at index 1) equals 9.
+
+
+# Linked List
+
+  - Single Linked List
+  - Double Linked List
+  - Reverse(Circular) Linked List 
+
+* Single Linked List
+  - Push
+  - Pop
+  - UnShift
+  - Shift
+  - GetFirst
+  - GetLast
+  - Set
+  - Insert
+  - Size
+  - Clear
+
+* Double Linked List
+  - Push
+  - Pop
+  - Shift
+  - UnShift
+
+* Reverse Linked List
+
+
+# Linked List
+  - A linked list is a linear data structure where elements, called nodes,
+    are not stored contiguously in memory.
+    Insted, each node contains data and a reference, or link, to the next node
+    in the sequence.
+
+  -> First element call the Head,
+  -> Last element call the Tail
