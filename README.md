@@ -148,3 +148,14 @@ also say step-by-step solutionn of the problem is called algorithm
 
   -> First element call the Head,
   -> Last element call the Tail
+
+
+# Stack and Queue
+* Stack
+  - A stack is a linear data structure that folows LIFO(Last In First Out) principle
+
+* Queue
+  - A queue is a linear data structure that function like a waiting line. It follows
+  the FIFO(First In, First Out) principle, meaning the element enters the queue first 
+  will be the first one to be removed.
+
