@@ -143,6 +143,21 @@ class LinkdeList {
         this.head = null;
         this.tail = null;
     }
+
+    reverse() {
+        let temp = this.head;
+        this.head = this.tail;
+        this.tail = temp;
+
+        let next = temp;
+        let prev = null;
+        for(let i = 0; i < this.length; i++) {
+            next = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp =next;
+        }
+    }
 }
 
 
@@ -155,16 +170,17 @@ myLinkedList.push(90);
 
 
 console.log('###################', myLinkedList)
-console.log('GET First ---->',myLinkedList.getFirst())
-console.log('GET Last ---->',myLinkedList.getLast())
+// console.log('GET First ---->',myLinkedList.getFirst())
+// console.log('GET Last ---->',myLinkedList.getLast())
 
-console.log(myLinkedList.get(3))
-myLinkedList.pop()
-myLinkedList.set(3, 45);
-myLinkedList.unshift(12)
-myLinkedList.insert(1, 23)
+// console.log(myLinkedList.get(3))
+// myLinkedList.pop()
+// myLinkedList.set(3, 45);
+// myLinkedList.unshift(12)
+// myLinkedList.insert(1, 23)
 console.log("----- Final List -----")
-console.log(myLinkedList)
+// console.log(myLinkedList, 'sdfghj')
 
 
-console.log(myLinkedList.size())
+myLinkedList.reverse()
+console.log(myLinkedList, 'ertyu')
