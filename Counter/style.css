@@ -1,0 +1,27 @@
+.digit{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 4rem;
+}
+
+.controls {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.controls button {
+    height: 40px;
+    width: 120px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: blue; 
+    cursor: pointer;  
+}
+
+.controls button:hover {
+    background-color: cadetblue;
+}
