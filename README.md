@@ -159,3 +159,35 @@ also say step-by-step solutionn of the problem is called algorithm
   the FIFO(First In, First Out) principle, meaning the element enters the queue first 
   will be the first one to be removed.
 
+
+# Hash Table
+  - Data structure use to store key-value pairs.
+    * Javascripts : Object
+    * Python: Dictionaries
+    * Go: Maps
+  
+  - Suppose we want to store a phone number in hash table
+
+    john: 345665
+    alex: 985678
+    luci: 456786
+
+    To solve this problem, we'll be using a "has functions"
+
+  
+  * Hash Function 
+    - Acts like as a translator, taking an input of any size (key) and converting it
+    into a fixed-size value (hash code) that can be used as an index within the hash 
+    table's internal array. This process of mapping arbitrary keys to fixed-length indices
+    is called hashing.
+
+    - Input: you feed any kind of data into the hash function, like your name, a sentance,
+    or a whole file.
+
+    - Hashing process: The function performs a series of mathematical operations on the
+    input data, essentially scrambling it up in a unique way.
+
+    - Fixed-Size Output: Regardless of the input size, the hash function always spits out
+    a fixed-size value, like a short string of characters or a number.
+
+  
