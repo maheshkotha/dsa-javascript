@@ -80,3 +80,43 @@ console.log(phoneBook.get('john'))
 console.log(phoneBook.getAllKeys())
 
 console.log(phoneBook.getAllValues());
+
+
+function wordCounter(str) {
+    const lowerText = str.toLowerCase();
+
+    const words = lowerText.split(/\s+/);
+
+    const wordMap = {}
+
+    for(w of words) {
+        if(w in wordMap) {
+            wordMap[w]++
+        } else {
+            wordMap[w] = 1
+        }
+    }
+
+    return wordMap;
+}
+
+
+console.log(wordCounter('abc abc abc mahesh mahesh kotha kotha babu babu babu'))
+
+
+function twoSum(nums, target) {
+    const numMap = {}
+
+    for(let i = 0; i < nums.length; i++) {
+        const compliment = target - nums[i];
+
+        if(compliment in numMap && numMap[compliment] !== i) {
+            return [numMap[compliment], i]
+        }
+
+        numMap[nums[i]] = i;
+    }
+    return []
+}
+
+console.log(twoSum([2, 7, 11, 15], 18))
