@@ -191,3 +191,44 @@ also say step-by-step solutionn of the problem is called algorithm
     a fixed-size value, like a short string of characters or a number.
 
   
+
+  # Tree
+  - A DS Tree is a fundamental hierarchical data structure. It represents a collection of 
+  elements (data) called nodes, connected by edges (links) forming a tree like structure.
+
+  * Parent
+  * Children / Sibilin
+  * leaf
+
+  # Full Tree
+  -  Each no either has no children(lear node) or exactly two children
+
+  # Perfect Tree (full + Balance)
+  - Balance: All the leaf nodes are at the same depth (distance from the root). This means 
+  the tree is completely filled with no gaps at any level.
+
+  # Complete Tree
+  - Almost Full Levels:: All levels except possibly the last one are completely filled
+  with nodes.
+
+  - Left Leaning Last Level:: The last level is filled with nodes from the left side as much
+  as possible. There might be empty spaces on the right.
+
+  # Binary Search Tree (BST)
+  - A BST is a special kind of binary tree used to organize data in a stored way. It works like a filling cabinet where you can efficiently search, add or remove items.
+
+
+  # Recursion
+  - Recursion is when a function calls itself. But it doesn't call itself exactly the same
+  way each time.
+
+  - The function makes the problem smaller by changing the input a bit.
+  like opening a smaller doll inside the bigger one.
+
+  - There's a simple case, that the function can solve without calling itself again.
+  This is called the base case.(The small doll)
+
+  - As long as it's not the base case, the function call itself with the smaller problem.
+
+  
+   
