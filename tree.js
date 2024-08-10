@@ -67,6 +67,62 @@ class BST {
         }
         return false
     }
+
+
+    bfs() {
+        let current = this.root;
+
+        let queue = [];
+        let data = [];
+
+        queue.push(current)
+
+        while(queue.length) {
+            current = queue.shift();
+
+            data.push(current.value);
+
+            if(current.left) {
+                queue.push(current.left)
+            }
+            if(current.right) {
+                queue.push(current.right)
+            }
+        }
+        return data
+    }
+
+    dfsPreOrder(node = this.root, data = []) {
+        if(node === null) return data;
+        data.push(node.value)
+
+        if(node.left) this.dfsPreOrder(node.left, data);
+        if(node.right) this.dfsPreOrder(node.right, data);
+
+        return data;
+    }
+
+    dfsPostOrder(node = this.root, data = []) {
+        if(node === null) return data;
+        
+        if(node.left) this.dfsPostOrder(node.left, data);
+        if(node.right) this.dfsPostOrder(node.right, data);
+        
+        data.push(node.value)
+
+        return data;
+    }
+
+    dfsInOrder(node = this.root, data = []) {
+        if(node === null) return data;
+        
+        if(node.left) this.dfsInOrder(node.left, data);
+        data.push(node.value)
+        if(node.right) this.dfsInOrder(node.right, data);
+        
+
+        return data;
+    }
 }
 
 
@@ -83,3 +139,11 @@ tree.insert(9)
 console.log(tree)
 
 console.log(tree.includes(80))
+
+console.log('bfs', tree.bfs())
+
+console.log('dfs, preorder', tree.dfsPreOrder());
+
+console.log('dfs post order', tree.dfsPostOrder());
+
+console.log('dfs inorder', tree.dfsInOrder())

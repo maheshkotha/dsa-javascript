@@ -230,5 +230,7 @@ also say step-by-step solutionn of the problem is called algorithm
 
   - As long as it's not the base case, the function call itself with the smaller problem.
 
-  
+
    
+# Bearth First Search
+- 
